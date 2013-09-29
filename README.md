@@ -32,7 +32,6 @@ After the install, you can use as follows.
     'volume': 574265}
     
     # get today's quote
-    
     fa.get_quote('ICICIBANK')
     
     Out: 923.3
