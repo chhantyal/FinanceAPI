@@ -65,6 +65,9 @@ def get_todays_min(symbol):
     return float(text.split('-')[1])
 
 def get_volume(symbol):
+    """
+    Returns total volume of stock transection
+    """
     contents = get_content(symbol)
     table2_rows = contents('#table2 tr')
     volume = table2_rows[2].find('td').text_content()
